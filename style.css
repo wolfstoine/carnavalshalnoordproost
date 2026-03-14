@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #E91E63 0%, #9C27B0 100%);
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding-bottom: 2px;
+}
+
+nav a.active,
+nav a:hover {
+    border-bottom: 2px solid #FFE66D;
+}
+
+.main-container {
+    max-width: 1100px;
+    margin: 30px auto 40px;
+    padding: 0 15px 30px;
+    background: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border-radius: 10px;
+}
+
+main {
+    padding: 25px 20px 10px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #E91E63;
+}
+
+h2 {
+    font-size: 22px;
+    margin: 20px 0 10px;
+    color: #9C27B0;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 15px 0 8px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.highlight {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.button-row {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #FF6B6B 0%, #FFE66D 100%);
+    color: #333;
+}
+
+.btn-secondary {
+    background: #f1f3f5;
+    color: #333;
+}
+
+ul {
+    margin: 5px 0 10px 20px;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+    padding: 15px 0 25px;
+}
+
+footer p {
+    margin-bottom: 4px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+}
