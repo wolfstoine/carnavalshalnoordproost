@@ -47,6 +47,27 @@
 
         <h2>Waarom een eigen hal?</h2>
         <p>Met een eigen hal creëren we een vaste uitvalsbasis voor onze wagens, materialen, vergaderingen en feestelijke activiteiten. Zo bouwen we aan de toekomst van carnaval in onze wijk en stad.</p>
+
+        <div class="counter-box">
+          <h2>Stand van de obligatieverkoop</h2>
+          <p>
+            Totaal aantal obligaties: <strong>150</strong><br>
+            Reeds verkocht: <strong id="sold-count">0</strong><br>
+            Nog beschikbaar: <strong id="available-count">150</strong>
+          </p>
+        </div>
+
+        <script>
+          // Vul hier handmatig het aantal verkochte obligaties in
+          const sold = 13; // <-- dit getal pas je aan als de stand wijzigt
+            
+          const total = 150;
+          const available = total - sold;
+        
+          document.getElementById('sold-count').textContent = sold;
+          document.getElementById('available-count').textContent = available;
+        </script>
+       
     </main>
 </div>
 
