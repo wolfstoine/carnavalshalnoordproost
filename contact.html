@@ -35,24 +35,27 @@
         <p><strong>Telefoon:</strong> 06-55371120</p>
         <p><strong>Adres:</strong> van Marumlaan 4, 7603MJ Almelo </p>
 
-        <h2>Contactformulier (basis)</h2>
-        <p>Dit formulier werkt alleen als je het koppelt aan een mail- of formulierdienst. Vraag je webhost of webmaster om hulp bij de technische koppeling.</p>
+        <h2>Contactformulier</h2>
+        <p>Je bericht wordt direct naar ons e-mailadres gestuurd.</p>
 
-        <form method="post" action="#">
+        <form method="post" action="https://formspree.io/f/xkoqqpjl">
             <div class="form-group">
                 <label for="naam">Naam</label>
-                <input type="text" id="naam" name="naam">
+                <input type="text" id="naam" name="naam" required>
             </div>
             <div class="form-group">
                 <label for="email">E-mailadres</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
             </div>
             <div class="form-group">
                 <label for="bericht">Bericht</label>
-                <textarea id="bericht" name="bericht"></textarea>
+                <textarea id="bericht" name="bericht" required></textarea>
             </div>
-            <input type="submit" value="Verstuur" class="btn btn-primary">
+            <button type="submit" class="btn btn-primary">Verstuur bericht</button>
         </form>
+
+        <p><small style="color: #666;">Je ontvangt een bevestiging per e-mail.</small></p>
+
     </main>
 </div>
 
